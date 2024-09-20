@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcee Juan - Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="main-container">
+        <header id="main-header">
+            <div id="header-content">
+                <img src="images/juan.jpg" alt="Arcee T. Juan" class="profile-pic">
+                <h1>Arcee T. Juan</h1>
+            </div>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/chamber">Chamber</a></li>
+                    <li><a href="https://github.com">GitHub Profile</a></li>
+                    <li><a href="https://linkedin.com">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="main-grid">
+                <section class="card">
+                    <h2>Course Work</h2>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <h2>Davao City, Philippines</h2>
+                    <img src="images/pheagle.jpg" alt="Philippine Eagle" class="image">
+                    <p>Philippine Eagle</p>
+                </section>
+            </div>
+
+            <section class="card" id="course-section">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="button-container">
+                    <button class="button" data-filter="All">All</button>
+                    <button class="button" data-filter="CSE">CSE</button>
+                    <button class="button" data-filter="WDD">WDD</button>
+                </div>
+                <div id="courseList"></div>
+                <p>Total Credits Required: <span id="totalCredits"></span></p>
+            </section>
+        </main>
+
+        <footer id="main-footer">
+            <p>©<span id="currentYear"></span> Arcee Juan | Philippines </p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
