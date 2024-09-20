@@ -1,0 +1,130 @@
+@media (min-width: 37.5em){
+    /* Base styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #EFEFEF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+#main-header {
+    background-color: #ADC698;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #000;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 9999px;
+    margin-right: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Navigation bar */
+#desktop-nav {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+#desktop-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#desktop-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+#desktop-nav a.active,
+#desktop-nav a:hover {
+    color: #d1f10a;
+}
+
+#desktop-nav a {
+    color: #fff;
+}
+
+/* Main content styles */
+main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+#main-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1rem;
+}
+
+/* Card styles */
+.card {
+    background-color: #D0E3C4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #ADC698;
+}
+
+/* Footer styles */
+#main-footer {
+    background-color: #ADC698;
+    padding: 1rem;
+    text-align: center;
+}
+
+}
