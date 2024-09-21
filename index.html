@@ -19,8 +19,9 @@
             <div id="header-content">
                 <img src="images/juan.jpg" alt="Arcee T. Juan" class="profile-pic">
                 <h1>Arcee T. Juan</h1>
+                <button id="hambutton" aria-label="Toggle navigation"></button>
             </div>
-            <nav id="desktop-nav">
+            <nav id="main-nav">
                 <ul>
                     <li><a href="/" class="active">Home</a></li>
                     <li><a href="/chamber">Chamber</a></li>
@@ -41,17 +42,19 @@
                     </ul>
                 </section>
 
-                <section class="card">
+                <section class="card2">
                     <h2>Davao City, Philippines</h2>
+                    <div class="image-container">
                     <img src="images/pheagle.jpg" alt="Philippine Eagle" class="image">
                     <p>Philippine Eagle</p>
+                    </div>
                 </section>
             </div>
 
             <section class="card" id="course-section">
                 <h2>Web and Computer Programming Certificate</h2>
                 <div class="button-container">
-                    <button class="button" data-filter="All">All</button>
+                    <button class="button active" data-filter="All">All</button>
                     <button class="button" data-filter="CSE">CSE</button>
                     <button class="button" data-filter="WDD">WDD</button>
                 </div>
@@ -61,10 +64,10 @@
         </main>
 
         <footer id="main-footer">
-            <p>©<span id="currentYear"></span> Arcee Juan | Philippines </p>
-            <p id="lastModified"></p>
+            <p>&copy; <span id="currentYear"></span> | Arcee Juan | Philippines </p>
+            <p id="lastModifiedDate"></p>
         </footer>
     </div>
-    <script src="scripts/script.js"></script>
+    <script defer src="scripts/script.js"></script>
 </body>
 </html>

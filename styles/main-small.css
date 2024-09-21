@@ -1,138 +1,218 @@
 @media (max-width: 600px) {
     /* Base styles for small screens */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: black;
-    background-color: #EFEFEF;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: black;
+        background-color: #EFEFEF;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 
-/* Container */
-#main-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+    /* Container */
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-/* Header styles */
-#main-header {
-    background-color: #ADC698;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 4px solid #000;
-}
+    /* Header styles */
+    #main-header {
+        background-color: #ADC698;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 4px solid #000;
+    }
 
-#header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
+    #header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
 
-.profile-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 9999px;
-    margin-right: 1rem;
-}
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+        border-radius: 9999px;
+        margin-right: 1rem;
+    }
 
-h1 {
-    font-size: 2rem;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    h1 {
+        font-size: 2rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-/* Navigation bar */
-#desktop-nav {
-    display: none;
-}
+    h2 {
+        text-align: center;
+        background-color: #ADC698;
+        padding: 1rem;
+    }
 
-#mobile-nav {
-    display: block;
-    width: 100%;
-    background-color: #000;
-    text-align: center;
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-}
+    #hambutton {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: white;
+        top: 1rem;
+        right: 1rem;
+    }
 
-#mobile-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
+    #hambutton::before {
+        content: "☰";
+    }
 
-#mobile-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    transition: color 0.3s ease;
-}
+    #hambutton.open::before {
+        content: "❎";
+    }
 
-#mobile-nav a.active,
-#mobile-nav a:hover {
-    color: #d1f10a;
-}
+    /*
+    #desktop-nav {
+        display: none;
+    } */
 
-#mobile-nav a {
-    color: #fff;
-}
+    #main-nav {
+        display: none;
+        width: 100%;
+        background-color: #000;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+    }
 
-/* Main content styles */
-main {
-    flex-grow: 1;
-    padding: 1rem;
-}
+    #main-nav.open{
+        display: flex;
+        justify-content: center;
+    }
 
-#main-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    padding-bottom: 1rem;
-}
+    #main-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
 
-/* Card styles */
-.card {
-    background-color: #D0E3C4;
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
+    #main-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
 
-.image {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    margin-top: 0.5rem;
-}
+    #main-nav a.active,
+    #main-nav a:hover {
+        color: #d1f10a;
+    }
 
-.button-container {
-    display: flex;
-    gap: 1rem;
-}
+    /* Main content styles */
+    main {
+        flex-grow: 1;
+        padding: 1rem;
+    }
 
-.button {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    background-color: #ADC698;
-}
+    #main-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        padding-bottom: 1rem;
+    }
 
-/* Footer styles */
-#main-footer {
-    background-color: #ADC698;
-    padding: 1rem;
-    text-align: center;
-}
+    /* Button container for filtering courses */
+    .button-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
 
+    .button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        background-color: #ADC698;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover,
+    .button.active {
+        background-color: #444;
+        color: white;
+    }
+
+    /* Course Block Styles */
+    .course-block {
+        display: inline-block;
+        width: 100px;
+        padding: 1rem;
+        margin: 0.5rem;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 0.5rem;
+        color: white;
+    }
+
+    #courseList {
+        display: grid;                        /* Use CSS Grid */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid columns */
+        gap: 1rem;                            /* Space between the blocks */
+        justify-items: center;                /* Center the blocks horizontally */
+        padding: 1rem;                        /* Padding around the grid */
+    }
+
+    .completed {
+        background-color: brown;
+    }
+
+    .incomplete {
+        background-color: lightgray;
+        color: black;
+    }
+
+    /* Card styles */
+    .card {
+        background-color: #D0E3C4;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .card2 {
+        background-color: #D0E3C4;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;  /* Stack the image and text vertically */
+        align-items: center;     /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: center;      /* Center text below the image */
+    }
+
+    .image {
+        width: 40%;
+        height: auto;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Footer styles */
+    #main-footer {
+        background-color: #ADC698;
+        padding: 1rem;
+        text-align: center;
+    }
 }
