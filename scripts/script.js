@@ -77,6 +77,7 @@ let currentFilter = 'All';
 function filterCourses(filter) {
     currentFilter = filter;
     renderCourses();
+    updateFilteredCredits();
 }
 
 // Render the courses dynamically
@@ -98,11 +99,31 @@ function renderCourses() {
     });
 }
 
-// Update the total credits dynamically
+// Update the credits dynamically based on the filter
+function updateFilteredCredits() {
+    let filteredCourses = courses;
+
+    if (currentFilter !== 'All') {
+        filteredCourses = courses.filter(course => course.subject === currentFilter);
+    }
+
+    const totalCreditsRequired = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    const completedCredits = filteredCourses
+        .filter(course => course.completed)
+        .reduce((sum, course) => sum + course.credits, 0);
+
+    document.getElementById('totalCredits').textContent = `${completedCredits} / ${totalCreditsRequired}`;
+}
+
+// Update the total credits dynamically for all courses (initial load)
 function updateTotalCredits() {
-    const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+    const totalCredits = courses
+        .filter(course => course.completed)
+        .reduce((sum, course) => sum + course.credits, 0);
     document.getElementById('totalCredits').textContent = totalCredits;
 }
+
+updateTotalCredits();
 
 // Event listener for DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -117,8 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderCourses();  // Initial rendering of the course list
-    updateTotalCredits();  // Update the total credits
+    updateTotalCredits();  // Update the total credits on initial load
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     // Update the year and last modified date in the footer
     const currentYearElement = document.getElementById('currentYear');
