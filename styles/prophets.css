@@ -1,0 +1,67 @@
+/* Styling for the entire body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the main container holding the prophet cards */
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Individual prophet card styling */
+  section {
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  section:hover {
+    transform: scale(1.05);
+  }
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
+  /* Styling for the prophet's full name */
+  h2 {
+    font-family: 'Georgia', serif;
+    color: #4b4b85;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for Date of Birth and Place of Birth text */
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Styling for the prophet's portrait image */
+  img {
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Ensure that the image fits properly */
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
