@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Davao IT Solutions",
+      "address": "123 IT Park, Bajada, Davao City",
+      "phone": "0917-123-4567",
+      "website": "https://davaoit.com",
+      "image": "placeholder.png",
+      "membershipLevel": 3,
+      "info": "Davao IT Solutions provides innovative software and hardware services to local businesses and multinational corporations."
+    },
+    {
+        "name": "Green Energy Co.",
+        "address": "456 Eco Drive, Green Town",
+        "phone": "800-987-6543",
+        "website": "https://greenenergyco.com",
+        "image": "placeholder.png",
+        "membershipLevel": 2,
+        "info": "Green Energy provides sustainable energy solutions for homes and businesses."
+      },
+    {
+      "name": "Mindanao Green Energy",
+      "address": "456 Renewable St, Lanang, Davao City",
+      "phone": "0918-987-6543",
+      "website": "https://mindanaogreenenergy.com",
+      "image": "placeholder.png",
+      "membershipLevel": 2,
+      "info": "A leader in renewable energy solutions, providing solar, wind, and hydroelectric power systems across Mindanao."
+    },
+    {
+      "name": "HealthPlus Davao",
+      "address": "789 Wellness Ave, Matina, Davao City",
+      "phone": "0920-555-9876",
+      "website": "https://healthplusdavao.com",
+      "image": "placeholder.png",
+      "membershipLevel": 1,
+      "info": "HealthPlus is a trusted provider of health supplements, wellness programs, and organic products for a healthier lifestyle."
+    },
+    {
+      "name": "Durian Delights",
+      "address": "888 Durian St, Poblacion District, Davao City",
+      "phone": "0922-888-2345",
+      "website": "https://duriandelights.com",
+      "image": "placeholder.png",
+      "membershipLevel": 2,
+      "info": "Durian Delights specializes in premium durian products, from candies to ice cream, capturing the authentic taste of Davao."
+    },
+    {
+      "name": "Davao Agro Ventures",
+      "address": "678 Agri Lane, Calinan, Davao City",
+      "phone": "0917-444-5678",
+      "website": "https://davaoagroventures.com",
+      "image": "placeholder.png",
+      "membershipLevel": 3,
+      "info": "A key player in agricultural innovations, offering sustainable farming solutions and organic produce for local and export markets."
+    },
+    {
+      "name": "Skyline Builders",
+      "address": "234 Highrise Rd, Ecoland, Davao City",
+      "phone": "0933-765-4321",
+      "website": "https://skylinebuildersdavao.com",
+      "image": "placeholder.png",
+      "membershipLevel": 1,
+      "info": "Skyline Builders constructs eco-friendly high-rise buildings and offers custom real estate solutions for urban development."
+    }
+  ]
+  
