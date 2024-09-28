@@ -24,6 +24,7 @@
         <div class="logo">
             <img src="images/pheagle.png" alt="Davao Chamber of Commerce Logo">
             <h1>Davao Chamber of Commerce</h1>
+            <button id="hambutton" aria-label="Toggle navigation"></button>
         </div>
         <nav id="nav">
             <ul>
@@ -33,10 +34,7 @@
                 <li><a href="#discover">Discover</a></li>
             </ul>
             <button id="darkModeToggle">🌓</button>
-            <button id="mobileMenuToggle">☰</button>
         </nav>
-        
-        
     </header>
 
     <main>
@@ -48,32 +46,41 @@
         <p id="main-p">Home</p>
 
         <div id="main-grid">
-        <section id="events">
-            <h2>Events</h2>
-            <!-- Event content will be dynamically added here -->
-        </section>
+            <section id="events">
+                <h2>Events</h2>
+                <ul id="eventList">
+                    <!-- Placeholder events will be dynamically added here -->
+                </ul>
+            </section>
 
-        <section id="weather">
-            <div id="currentWeather">
-                <h2>Current Weather</h2>
-                <div id="weatherIcon"></div>
-                <p id="temperature"></p>
-                <p id="description"></p>
-                <p id="humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
-            </div>
-        </section>
+            <section id="weather">
+                <div id="currentWeather">
+                    <h2>Current Weather</h2>
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                    <p id="highLow"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </section>
 
-        <section id="weatherForecast">
+            <section id="weatherForecast">
                 <h2>Weather Forecast</h2>
-                <ul id="forecast"></ul>
-        </section>
+                <ul id="forecast">
+                    <!-- Weather forecast will be dynamically added here -->
+                </ul>
+            </section>
         </div>
 
-        <section id="businessDirectory">
-            <!-- Business cards will be dynamically added here -->
-        </section>
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄 List</button>
+        </div>
+        <hr>
+        <article id="businessDirectory" class="grid">
+            <!-- Business member cards will be dynamically inserted here using JavaScript -->
+        </article>
     </main>
 
     <footer>
@@ -96,7 +103,7 @@
                 <img src="images/linkedin.png" alt="LinkedIn" class="socialIcon">
             </a>
         </section>
-        
+
         <section class="footerMeta">
             <p>WDD231 Class Project</p>
             <p>Arcee Juan</p>
