@@ -1,0 +1,46 @@
+/* Smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    #mobileMenuToggle {
+        display: block;
+    }
+
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #f4f4f4;
+    }
+
+    nav.active ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #hero img {
+        height: auto; /* Full-width image for smaller screens */
+    }
+
+    #keynoteTickets {
+        font-size: 1rem;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #businessDirectory {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
