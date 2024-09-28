@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A homepage for the submission of W01 Assignment.">
+    <meta name="author" content="Arcee Juan">
+    <meta property="og:title" content="Davao Chamber of Commerce">
+    <meta property="og:type" content="Webpage">
+    <meta property="og:image:url" content="https://media.gettyimages.com/id/1500928433/photo/philippine-eagle-against-sunset-clouds-davao-mindanao-philippines.jpg?s=1024x1024&w=gi&k=20&c=06-AjKdr53vVhbspxb4robTF1UsweD3UfRlvuafoj1M=">
+    <meta property="og:url" content="https://arceejuanarcee.github.io/wdd231/chamber/directory.html">
+
+    <title>Davao Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/directory-styles.css">
+    <link rel="icon" href="images/favicon.io">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/pheagle.png" alt="Davao Chamber of Commerce Logo">
+            <span>Davao Chamber of Commerce</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#directory">Directory</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#discover">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">🌓</button>
+        <button id="mobileMenuToggle">☰</button>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="hero-image.jpg" alt="Timbuktu landscape">
+            <button id="keynoteTickets">Keynote Tickets</button>
+        </section>
+
+        <h1>Home</h1>
+
+        <section id="events">
+            <h2>Events</h2>
+            <!-- Event content will be dynamically added here -->
+        </section>
+
+        <section id="weather">
+            <div id="currentWeather">
+                <h2>Current Weather</h2>
+                <div id="weatherIcon"></div>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+            </div>
+            <div id="weatherForecast">
+                <h2>Weather Forecast</h2>
+                <ul id="forecast"></ul>
+            </div>
+        </section>
+
+        <section id="businessDirectory">
+            <!-- Business cards will be dynamically added here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <p>Davao Chamber of Commerce</p>
+            <p>Catalunan Pequeno</p>
+            <p>Davao City, 8000</p>
+            <p>DCC@dvo.ph</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="socialLinks">
+            <a href="#" class="socialIcon">YouTube</a>
+            <a href="#" class="socialIcon">Twitter</a>
+            <a href="#" class="socialIcon">LinkedIn</a>
+        </div>
+        <div class="footerMeta">
+            <p>WDD231 Class Project</p>
+            <p>Arcee Juan</p>
+            <p>&copy; <span id="currentYear"></span> Davao Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
