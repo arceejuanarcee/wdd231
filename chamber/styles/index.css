@@ -112,6 +112,7 @@
         background-color: #ADC698;
         padding: 1rem;
     }
+
     
     #main-p {
         font-size: 3.5rem;
@@ -175,15 +176,10 @@
     /* Grid view styles for the business directory */
     #businessDirectory.grid-view {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 20px;
     }
 
-    #businessDirectoryIndex.grid-view {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-    }
 
     /* List view styles for the business directory */
     #businessDirectory.list-view {
@@ -237,7 +233,7 @@
 
     #businessDirectory {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust for responsive design */
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust for responsive design */
         gap: 20px; /* Add space between cards */
         margin-top: 2rem;
     }
@@ -251,4 +247,37 @@
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
         transition: transform 0.2s ease;
     }
+
+    #callToAction {
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        height: 300px; 
+        
+    }
+    
+    #register {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #registerButton {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+    
+    #registerButton:hover {
+        background-color: #A9C89E; /* Hover effect */
+        color: black;
+    }
+    
 }

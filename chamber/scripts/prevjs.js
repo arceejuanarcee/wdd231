@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('nav');
     const currentYearSpan = document.getElementById('currentYear');
     const lastModifiedSpan = document.getElementById('lastModified');
-    const directory = document.getElementById('businessDirectory');
     
     console.log("Page initialized...");
 
@@ -28,73 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     apiFetch();  // Fetch current weather
     fetchWeatherForecast();  // Fetch weather forecast
 
-    // Fetch and display random Gold and Silver members from the members.json
-    fetchMembersData();  // Fetch and display members
-
 });
-
-// Fetch and display members from the JSON file
-async function fetchMembersData() {
-    try {
-        const response = await fetch('./data/members.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const members = await response.json();
-        displayFilteredMembers(members);
-    } catch (error) {
-        console.error('Error fetching member data:', error);
-    }
-}
-
-// Function to display only 3 random Gold and Silver members in the UI
-function displayFilteredMembers(members) {
-    const directory = document.getElementById('businessDirectory');
-    directory.innerHTML = ''; // Clear existing data
-
-    // Filter to get only Gold (3) and Silver (2) members
-    const filteredMembers = members.filter(member => member.membershipLevel === 2 || member.membershipLevel === 3);
-
-    // Select 3 random members from the filtered list
-    const randomMembers = getRandomMembers(filteredMembers, 3);
-
-    // Display the selected random members
-    randomMembers.forEach(member => {
-        const card = document.createElement('div');
-        card.className = 'memberCard';
-        card.innerHTML = `
-            <img src="./images/${member.image}" alt="${member.name}">
-            <p>${member.name}</p>
-            <h3>Address: ${member.address}</h3>
-            <h3>Phone: ${member.phone}</h3>
-            <h3>Website: <a href="${member.website}" target="_blank">${member.website}</a></h3>
-            <h3>Membership Level: ${getMembershipLevel(member.membershipLevel)}</h3>
-            <h3>Info: ${member.info}</h3>
-        `;
-        directory.appendChild(card);
-    });
-}
-
-// Function to get a random selection of members (limit to a specified count)
-function getRandomMembers(members, count) {
-    // Shuffle the array and return the first 'count' members
-    const shuffled = members.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-}
-
-// Function to get membership level based on numerical input
-function getMembershipLevel(level) {
-    switch (level) {
-        case 1:
-            return 'Member';
-        case 2:
-            return 'Silver';
-        case 3:
-            return 'Gold';
-        default:
-            return 'Unknown';
-    }
-}
 
 // Fetch and display weather data
 const currentTemp = document.getElementById('temperature');
