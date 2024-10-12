@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join page for the Davao Chamber of Commerce">
+    <meta name="author" content="Arcee Juan">
+    <meta property="og:title" content="Davao Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arceejuanarcee.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://arceejuanarcee.github.io/wdd231/chamber/join.html">
+    <title>Join - Davao Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/pheagle.png" alt="Davao Chamber of Commerce Logo">
+            <h1>Davao Chamber of Commerce</h1>
+            <button id="hambutton" aria-label="Toggle navigation"></button>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#discover">Discover</a></li>
+            </ul>
+            <button id="darkModeToggle">🌓</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join the Davao Chamber of Commerce</h2>
+        <div class="join-container">
+            <form method="get" action="thankyou.html">
+                <label for="firstName">
+                    First Name:
+                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+                </label>
+
+                <label for="lastName">
+                    Last Name:
+                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+                </label>
+
+                <label for="title">
+                    Title:
+                    <input type="text" id="title" name="title" autocomplete="organization-title" title="Enter your organizational title" pattern="[A-Za-z\s-]{7,}" required>
+                </label>
+
+                <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email address">
+                </label>
+
+                <label for="phone">
+                    Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                </label>
+
+                <label for="businessName">
+                    Business/Organization Name:
+                    <input type="text" id="businessName" name="businessName" required autocomplete="organization" title="Enter your business or organization name">
+                </label>
+
+                <label for="membershipLevel">
+                    Membership Level:
+                    <select id="membershipLevel" name="membershipLevel" required title="Select your membership level">
+                        <option value="">Select a level</option>
+                        <option value="NP">NP Membership (Non-profit, no fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">
+                    Business/Organization Description:
+                    <textarea id="description" name="description" title="Describe your business or organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Join the Chamber" title="Submit your application">
+            </form>
+
+            <div class="membership-cards">
+                <div class="card" id="np-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <a href="#" class="info-link" data-modal="np-modal">More Info</a>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level benefits</p>
+                    <a href="#" class="info-link" data-modal="bronze-modal">More Info</a>
+                </div>
+                <div class="card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits</p>
+                    <a href="#" class="info-link" data-modal="silver-modal">More Info</a>
+                </div>
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits</p>
+                    <a href="#" class="info-link" data-modal="gold-modal">More Info</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <h3>NP Membership Benefits</h3>
+                <p>Free membership for non-profit organizations.</p>
+                <ul>
+                    <li>Basic directory listing</li>
+                    <li>Networking opportunities</li>
+                    <li>Access to chamber events</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <h3>Bronze Membership Benefits</h3>
+                <p>Entry-level benefits for small businesses.</p>
+                <ul>
+                    <li>Enhanced directory listing</li>
+                    <li>Discounted event tickets</li>
+                    <li>Monthly newsletter feature</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <h3>Silver Membership Benefits</h3>
+                <p>Enhanced benefits for growing businesses.</p>
+                <ul>
+                    <li>Premium directory listing</li>
+                    <li>Sponsored social media posts</li>
+                    <li>Quarterly spotlight feature</li>
+                    <li>Discounted booth at annual expo</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <p>Premium benefits for established businesses.</p>
+                <ul>
+                    <li>Top-tier directory listing</li>
+                    <li>Monthly spotlight feature</li>
+                    <li>Free booth at annual expo</li>
+                    <li>Exclusive networking events</li>
+                    <li>Advisory board participation</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-grid">
+            <section class="footerInfo">
+                <p>Davao Chamber of Commerce</p>
+                <p>Catalunan Pequeno</p>
+                <p>Davao City, 8000</p>
+                <p>DCC@dvo.ph</p>
+                <p>(123) 456-7890</p>
+            </section>
+            <section class="socialLinks">
+                <a href="https://youtube.com">
+                    <img src="images/youtube.png" alt="YouTube" class="socialIcon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter" class="socialIcon">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="socialIcon">
+                </a>
+            </section>
+            <section class="footerMeta">
+                <p>WDD231 Class Project</p>
+                <p>Arcee Juan</p>
+                <p>&copy; <span id="currentYear"></span> Davao Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </section>
+        </div>
+    </footer>
+
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/join.js"></script>
+</body>
+</html>

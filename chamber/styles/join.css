@@ -1,0 +1,449 @@
+@media (min-width: 37.5em) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #hambutton{
+        display: none;
+    }
+
+    #darkModeToggle{
+        display: none;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    
+    header {
+        background-color: #ADC698;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #nav {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    #darkModeToggle, #mobileMenuToggle {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    #mobileMenuToggle {
+        display: none;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    #hero {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    
+    #hero img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #keynoteTickets {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #769f5d;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+    
+    h1, h4 {
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    h2 {
+        text-align: center;
+        background-color: #ADC698;
+        padding: 1rem;
+    }
+
+    
+    #main-p {
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    #main-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 1rem;
+    }
+    
+    #footer-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #events, #weather, #weatherForecast, #businessDirectory {
+        margin-bottom: 2rem;
+    }
+    
+    #eventList {
+        list-style-type: none;
+        padding-top: 1rem;
+    }
+    
+    #forecast {
+        list-style-type: none;
+        padding-top: 1rem;
+    }
+    
+    #events, #currentWeather, #weatherForecast {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+    }
+    
+    .socialLinks {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 1rem 0;
+    }
+    
+    .socialIcon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Grid view styles for the business directory */
+    #businessDirectory.grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+
+
+    /* List view styles for the business directory */
+    #businessDirectory.list-view {
+        display: block;
+    }
+
+    #businessDirectory.list-view .memberCard {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .memberCard.list-view {
+        text-align: left;
+    }
+
+    .memberCard.list-view img {
+        margin-right: 15px;
+        float: left;
+    }
+    
+    .memberCard img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    
+    .memberCard h3 {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        text-align: left;
+        font-weight: normal;
+    }
+    
+    .memberCard p {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .memberCard a {
+        color: #336699;
+        text-decoration: none;
+    }
+    
+    .memberCard:hover {
+        transform: scale(1.05); /* Slight hover effect */
+    }
+
+    #businessDirectory {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust for responsive design */
+        gap: 20px; /* Add space between cards */
+        margin-top: 2rem;
+    }
+    
+    .memberCard {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+        transition: transform 0.2s ease;
+    }
+
+    #callToAction {
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        height: 300px; 
+        
+    }
+    
+    #register {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #registerButton {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+    
+    #registerButton:hover {
+        background-color: #A9C89E; /* Hover effect */
+        color: black;
+    }
+    
+}
+
+
+/* join.css */
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ADC698;
+    color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #9AB784;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.info-link {
+    display: inline-block;
+    background-color: #ADC698;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.info-link:hover {
+    background-color: #9AB784;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .join-container {
+        flex-direction: row;
+    }
+
+    form {
+        flex: 2;
+    }
+
+    .membership-cards {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: start;
+    }
+}
