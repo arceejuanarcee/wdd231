@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you page for Davao Chamber of Commerce membership application">
+    <meta name="author" content="Arcee Juan">
+    <meta property="og:title" content="Thank You - Davao Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arceejuanarcee.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://arceejuanarcee.github.io/wdd231/chamber/thankyou.html">
+    <title>Thank You - Davao Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/pheagle.png" alt="Davao Chamber of Commerce Logo">
+            <h1>Davao Chamber of Commerce</h1>
+            <button id="hambutton" aria-label="Toggle navigation"></button>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#discover">Discover</a></li>
+            </ul>
+            <button id="darkModeToggle">🌓</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank You for Joining!</h2>
+        <div class="thank-you-message">
+            <p>We appreciate your interest in joining the Davao Chamber of Commerce. Your application has been received, and we'll be in touch soon.</p>
+        </div>
+        <div class="form-info">
+            <h3>Your Submitted Information:</h3>
+            <ul id="submittedInfo">
+                <!-- JavaScript will populate this list -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-grid">
+            <section class="footerInfo">
+                <p>Davao Chamber of Commerce</p>
+                <p>Catalunan Pequeno</p>
+                <p>Davao City, 8000</p>
+                <p>DCC@dvo.ph</p>
+                <p>(123) 456-7890</p>
+            </section>
+            <section class="socialLinks">
+                <a href="https://youtube.com">
+                    <img src="images/youtube.png" alt="YouTube" class="socialIcon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter" class="socialIcon">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="socialIcon">
+                </a>
+            </section>
+            <section class="footerMeta">
+                <p>WDD231 Class Project</p>
+                <p>Arcee Juan</p>
+                <p>&copy; <span id="currentYear"></span> Davao Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="scripts/thankyou.js"></script>
+</body>
+</html>

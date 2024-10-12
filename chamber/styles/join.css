@@ -392,21 +392,65 @@ input[type="submit"]:hover {
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
+    position: relative;
 }
 
 .close-modal {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .close-modal:hover,
 .close-modal:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+}
+
+/* thankyou.css */
+.thank-you-message {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-info h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#submittedInfo {
+    list-style-type: none;
+    padding: 0;
+}
+
+#submittedInfo li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#submittedInfo li strong {
+    color: #333;
+    margin-right: 0.5rem;
 }
 
 /* Animation for cards */
