@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A directory page for the Davao Chamber of Commerce">
+    <meta name="description" content="Directory page for the Davao Chamber of Commerce">
     <meta name="author" content="Arcee Juan">
-    <meta property="og:title" content="Davao Chamber of Commerce">
+    <meta property="og:title" content="Davao Chamber of Commerce Directory Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://arceejuanarcee.github.io/wdd231/chamber/images/og-image.jpg">
-    <meta property="og:url" content="https://arceejuanarcee.github.io/wdd231/chamber/directory.html">
-
-    <title>Davao Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/directory-styles.css">
+    <meta property="og:url" content="https://arceejuanarcee.github.io/wdd231/chamber/join.html">
+    <title>Directory - Davao Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/directory-styles-small.css">
-    <link rel="icon" href="images/favicon.ico">
-
+    <link rel="stylesheet" href="styles/directory-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -24,96 +21,54 @@
         <div class="logo">
             <img src="images/pheagle.png" alt="Davao Chamber of Commerce Logo">
             <h1>Davao Chamber of Commerce</h1>
-            <button id="hambutton" aria-label="Toggle navigation"></button>
         </div>
+
+        <button id="hambutton">☰</button>
+        
         <nav id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#discover">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
-            <button id="darkModeToggle">🌓</button>
         </nav>
+
+        <button id="darkModeToggle">🌓</button>
     </header>
 
     <main>
-        <section id="hero">
-            <img src="images/davaolandscape.jpg" alt="Davao landscape">
-            <button id="keynoteTickets">Keynote Tickets</button>
-        </section>
-
-        <p id="main-p">Home</p>
-
-        <div id="main-grid">
-            <section id="events">
-                <h2>Events</h2>
-                <ul id="eventList">
-                    <!-- Placeholder events will be dynamically added here -->
-                </ul>
-            </section>
-
-            <section id="weather">
-                <div id="currentWeather">
-                    <h2>Current Weather</h2>
-                    <p id="temperature"></p>
-                    <p id="description"></p>
-                    <p id="highLow"></p>
-                    <p id="humidity"></p>
-                    <p id="sunrise"></p>
-                    <p id="sunset"></p>
-                </div>
-            </section>
-
-            <section id="weatherForecast">
-                <h2>Weather Forecast</h2>
-                <ul id="forecast">
-                    <!-- Weather forecast will be dynamically added here -->
-                </ul>
-            </section>
-        </div>
-
         <div class="menu">
             <button id="grid">⏹️ Grid</button>
             <button id="list">📄 List</button>
         </div>
-        <hr>
-        <article id="businessDirectory" class="grid">
-            <!-- Business member cards will be dynamically inserted here using JavaScript -->
-        </article>
+
+        <div id="businessDirectory"></div>
     </main>
 
-    <footer>
-        <div id="footer-grid">
-        <section class="footerInfo">
-            <p>Davao Chamber of Commerce</p>
+    <footer id="footer-grid">
+        <div class="section footerInfo">
+            <h3>Davao Chamber of Commerce</h3>
             <p>Catalunan Pequeno</p>
             <p>Davao City, 8000</p>
             <p>DCC@dvo.ph</p>
             <p>(123) 456-7890</p>
-        </section>
-        <section class="socialLinks">
-            <a href="https://youtube.com">
-                <img src="images/youtube.png" alt="YouTube" class="socialIcon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter" class="socialIcon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn" class="socialIcon">
-            </a>
-        </section>
+        </div>
 
-        <section class="footerMeta">
+        <div class="section socialLinks">
+            <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube" class="socialIcon"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" class="socialIcon"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn" class="socialIcon"></a>
+        </div>
+
+        <div class="section footerMeta">
             <p>WDD231 Class Project</p>
             <p>Arcee Juan</p>
-            <p>&copy; <span id="currentYear"></span> Davao Chamber of Commerce</p>
+            <p>© <span id="currentYear"></span> Davao Chamber of Commerce</p>
             <p>Last Modification: <span id="lastModified"></span></p>
-        </section>
-
         </div>
     </footer>
 
-    <script defer src="scripts/directory.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

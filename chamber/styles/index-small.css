@@ -261,4 +261,214 @@
         background-color: #A9C89E; /* Hover effect */
         color: black;
     }
+
+    @media (max-width: 600px) {
+        /* Base mobile styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Header and Navigation */
+        header {
+            background-color: #ADC698;
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        #hambutton {
+            font-size: 1.5rem;
+            border: 0;
+            background: none;
+            color: black;
+            top: 1rem;
+            right: 1rem;
+        }
+    
+        #hambutton::before {
+            content: "☰";
+        }
+    
+        #hambutton.active::before {
+            content: "❎";
+        }
+    
+        /* Navigation styles */
+        #nav {
+            display: none;
+            width: 100%;
+            text-align: center;
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
+        }
+    
+        #nav.active {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        /* Logo styles */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+    
+        /* Discover page specific mobile styles */
+        .discover-container {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    
+        /* Sidebar sections */
+        .sidebar > div {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .sidebar h2 {
+            text-align: center;
+            background-color: #ADC698;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+    
+        /* Demographics and Events sections */
+        .demographics ul,
+        .upcoming-events ul {
+            list-style: none;
+            padding: 0.5rem;
+        }
+    
+        .demographics li,
+        .upcoming-events li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        /* Gallery section */
+        .gallery h2 {
+            text-align: center;
+            background-color: #ADC698;
+            padding: 0.75rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+    
+        .image-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    
+        .image-grid figure {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin: 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .image-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    
+        .image-grid figcaption {
+            padding: 0.75rem;
+            text-align: center;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+    
+        /* Footer mobile styles */
+        #footer-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+        }
+    
+        .footerInfo,
+        .socialLinks,
+        .footerMeta {
+            margin-bottom: 1rem;
+        }
+    
+        .socialLinks {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    
+        .socialIcon {
+            width: 30px;
+            height: 30px;
+        }
+    
+        /* Dark mode mobile styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    
+        body.dark-mode header {
+            background-color: #1a1a1a;
+        }
+    
+        body.dark-mode .sidebar > div,
+        body.dark-mode .image-grid figure {
+            background-color: #1a1a1a;
+            border-color: #444;
+        }
+    
+        body.dark-mode h2 {
+            background-color: #2a2a2a;
+        }
+    
+        body.dark-mode .sidebar li {
+            border-color: #444;
+        }
+    
+        body.dark-mode figcaption {
+            color: #fff;
+        }
+    
+        /* Remove hover effects on mobile */
+        .image-grid figure:hover {
+            transform: none;
+        }
+    
+        .memberCard:hover {
+            transform: none;
+        }
+    }
 }
