@@ -1,0 +1,65 @@
+[
+  {
+      "name": "Solar Philippines Tarlac Solar Farm",
+      "address": "123 Solar Park, Capas, Tarlac",
+      "phone": "0917-123-4567",
+      "website": "https://solarphilippines.com",
+      "image": "placeholder.png",
+      "membershipLevel": 3,
+      "info": "The largest solar power farm in Southeast Asia, producing up to 150 MW of electricity and powering around 150,000 homes."
+  },
+  {
+      "name": "Mindanao Solar Power Project",
+      "address": "456 Sun Lane, Misamis Oriental, Mindanao",
+      "phone": "800-987-6543",
+      "website": "https://mindanaosolar.com",
+      "image": "placeholder.png",
+      "membershipLevel": 2,
+      "info": "A 20 MW solar energy project developed to increase renewable energy capacity in Mindanao and reduce reliance on coal."
+  },
+  {
+      "name": "North Luzon Renewable Energy Corporation (NLREC) Wind Farm",
+      "address": "789 Windy Ave, Ilocos Norte, Luzon",
+      "phone": "0918-987-6543",
+      "website": "https://nlrecwindfarm.com",
+      "image": "placeholder.png",
+      "membershipLevel": 2,
+      "info": "A 150 MW wind power project utilizing strong wind currents in Ilocos Norte, providing sustainable energy to the Luzon grid."
+  },
+  {
+      "name": "Burgos Wind Farm",
+      "address": "321 Gust Rd, Burgos, Ilocos Norte",
+      "phone": "0920-555-9876",
+      "website": "https://burgoswind.com",
+      "image": "placeholder.png",
+      "membershipLevel": 1,
+      "info": "Operated by EDC, this wind farm generates 150 MW and is one of the largest wind power facilities in Southeast Asia."
+  },
+  {
+      "name": "Bakun Hydro Power Plant",
+      "address": "456 River Drive, Bakun, Benguet",
+      "phone": "0922-888-2345",
+      "website": "https://bakunhydro.com",
+      "image": "placeholder.png",
+      "membershipLevel": 2,
+      "info": "A 70 MW hydropower plant that utilizes mountain river flows to contribute to renewable energy in the Cordillera region."
+  },
+  {
+      "name": "San Carlos BioPower",
+      "address": "888 Biomass Blvd, San Carlos, Negros Occidental",
+      "phone": "0917-444-5678",
+      "website": "https://sancarlosbiopower.com",
+      "image": "placeholder.png",
+      "membershipLevel": 3,
+      "info": "A 20 MW biomass power plant generating electricity using sugarcane waste, supporting sustainable energy production."
+  },
+  {
+      "name": "Nasulo Geothermal Power Plant",
+      "address": "234 Geothermal St, Valencia, Negros Oriental",
+      "phone": "0933-765-4321",
+      "website": "https://nasulogeothermal.com",
+      "image": "placeholder.png",
+      "membershipLevel": 1,
+      "info": "Produces 49.4 MW of geothermal energy, tapping into natural geothermal resources to provide clean energy to Negros Island."
+  }
+]

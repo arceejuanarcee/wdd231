@@ -1,0 +1,264 @@
+@media (max-width: 600px) {
+
+    header {
+        background-color: #ADC698;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #grid, #list{
+        display: none;
+    }
+    /* Show hamburger button for smaller screens */
+    #hambutton {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: black;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #hambutton::before {
+        content: "☰";
+    }
+
+    #hambutton.active::before {
+        content: "❎";
+    }
+
+    /* Show dark mode toggle for smaller screens */
+    #darkModeToggle {
+        display: none;
+    }
+    
+    
+    /* Stack navigation vertically and make it appear when active */
+    #nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+    }
+
+    #nav.active {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif; /* Consistent font styling */
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #main-header{
+        background-color: #ADC698;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Keep font styling same for the h1 */
+    h1, h4 {
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+    }
+
+    h2 {
+        text-align: center;
+        background-color: #ADC698;
+        padding: 0.75rem;
+        font-size: 1.5rem;
+        font-family: Arial, sans-serif;
+    }
+
+    #main-p {
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+    }
+
+    /* Hero image should remain responsive */
+    #hero {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+
+    #hero img {
+        width: 100%; /* Full width of the screen */
+        height: auto; /* Maintain proportional height */
+    }
+
+    #keynoteTickets {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        padding: 8px 15px;
+        background-color: #769f5d;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Stack sections (events, weather, forecast) vertically */
+    #main-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #footer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #events, #weather, #weatherForecast {
+        margin-bottom: 1rem;
+    }
+
+    #eventList {
+        list-style-type: none;
+        padding-top: 1rem;
+    }
+    
+    #forecast {
+        list-style-type: none;
+        padding-top: 1rem;
+    }
+
+    #events, #currentWeather, #weatherForecast {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    /* Stack member cards vertically */
+    #businessDirectory {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .memberCard {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 1rem;
+        text-align: left;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .memberCard img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .memberCard h3 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .memberCard p {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+    }
+
+    .memberCard a {
+        color: #336699;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+    }
+
+    .socialLinks {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 1rem 0;
+    }
+
+    .socialIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #callToAction {
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        height: 300px; 
+        
+    }
+    
+    #register {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #registerButton {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+    
+    #registerButton:hover {
+        background-color: #A9C89E; /* Hover effect */
+        color: black;
+    }
+}

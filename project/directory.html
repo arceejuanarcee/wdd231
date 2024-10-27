@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory page for the Philippines Renewable Energy Hub">
+    <meta name="author" content="Arcee Juan">
+    <meta property="og:title" content="Philippines Renewable Energy Hub Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arceejuanarcee.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://arceejuanarcee.github.io/wdd231/chamber/join.html">
+    <title>Directory - Philippines Renewable Energy Hub</title>
+    <link rel="stylesheet" href="styles/directory-styles-small.css">
+    <link rel="stylesheet" href="styles/directory-styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Philippines Renewable Energy Hub Logo">
+            <h1>Philippines Renewable Energy Hub</h1>
+        </div>
+
+        <button id="hambutton">☰</button>
+        
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+        <button id="darkModeToggle">🌓</button>
+    </header>
+
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄 List</button>
+        </div>
+
+        <div id="businessDirectory"></div>
+    </main>
+
+    <footer id="footer-grid">
+        <div class="section footerInfo">
+            <h3>Philippines Renewable Energy Hub</h3>
+            <p>Catalunan Pequeno</p>
+            <p>Davao City, 8000</p>
+            <p>PREH@dvo.ph</p>
+            <p>(123) 456-7890</p>
+        </div>
+
+        <div class="section socialLinks">
+            <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube" class="socialIcon"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" class="socialIcon"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn" class="socialIcon"></a>
+        </div>
+
+        <div class="section footerMeta">
+            <p>WDD231 Class Project</p>
+            <p>Arcee Juan</p>
+            <p>© <span id="currentYear"></span> Philippines Renewable Energy Hub</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="script/directory.js"></script>
+</body>
+</html>
